@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('dashboard');
 // });
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return view('dashboard');
 });
 Route::get('/inventario/productos', function () {
@@ -62,7 +62,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/', 'ProductoController@inicio')->name('inicio');
+//Route::get('/', 'ProductoController@inicio')->name('inicio');
 Route::get('/registrar', 'Auth\RegisterController@show')->name('registrar.usuario');
 Route::get('/registrar/nuevo', 'Auth\RegisterController@store')->name('registrar.nuevo');
 Route::get('/salir', 'Auth\LoginController@logout')->name('salir');
