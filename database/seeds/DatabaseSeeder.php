@@ -286,7 +286,7 @@ class DatabaseSeeder extends Seeder
             'oferta_id' => 1,
             'cod' => 'MRAM-002',
             'nombre' => 'ASUS H310M',
-            'descripcion' => '8GB DDR 3000 8X1 XPG', 'La memoria XPG SPECTRIX D41 DDR4 RGB reune un rendimiento excepcional y una iluminacion RGB fascinante para ofrecerte una actualizacion digna para tu sistema',
+            'descripcion' => '8GB DDR 3000 8X1 XPG La memoria XPG SPECTRIX D41 DDR4 RGB reune un rendimiento excepcional y una iluminacion RGB fascinante para ofrecerte una actualizacion digna para tu sistema',
             'precio_venta' => 192.00,
             'imagen' => '8GB DDR 3000 8X1 XPG1.jpg',
             'imagenes' => '["8GB DDR 3000 8X1 XPG1.jpg","8GB DDR 3000 8X1 XPG2.jpg","8GB DDR 3000 8X1 XPG3.jpg","8GB DDR 3000 8X1 XPG4.jpg"]',
@@ -557,9 +557,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // FAVORITOS
-        DB::table('favoritos')->insert([
-            'persona_id' => 2,
-            'producto_id' => 25,
-        ]);
+        // DB::table('favoritos')->insert([
+        //     'persona_id' => 2,
+        //     'producto_id' => 25,
+        // ]);
     }
 }
