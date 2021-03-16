@@ -48,6 +48,6 @@ class LoginController extends Controller
         Auth::logout();
         Cart::clear();
         $request->session()->invalidate();
-        return back();
+        return redirect()->route('inicio');
     }
 }

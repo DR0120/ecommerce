@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('dashboard');
 // });
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+// Route::get('/', function () {
+//     return view('paginas.map');
+// });
 Route::get('/inventario/productos', function () {
     return view('producto');
 });
